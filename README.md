@@ -17,7 +17,7 @@ $ npm install -g paws-cli
 $ paws-cli COMMAND
 running command...
 $ paws-cli (-v|--version|version)
-paws-cli/0.0.3 darwin-x64 node-v8.11.4
+paws-cli/0.0.4 darwin-x64 node-v8.11.4
 $ paws-cli --help [COMMAND]
 USAGE
   $ paws-cli COMMAND
@@ -39,13 +39,12 @@ USAGE
 
 OPTIONS
   -h, --help  show CLI help
-  --sfc       generate a Stateless Function Component
 
 ALIASES
   $ paws-cli cc
 ```
 
-_See code: [src/commands/create-component.ts](https://github.com/ChristienGuy/paws-cli/blob/v0.0.3/src/commands/create-component.ts)_
+_See code: [src/commands/create-component.ts](https://github.com/ChristienGuy/paws-cli/blob/v0.0.4/src/commands/create-component.ts)_
 
 ## `paws-cli help [COMMAND]`
 
