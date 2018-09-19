@@ -32,6 +32,11 @@ export default class CreateComponent extends Command {
 
     // Get the path, assume it has the final component name at the end
     const path = args.path
+
+    if (!path) {
+      this.error('Please provide a path')
+      return
+    }
     const name = path.split('/')[path.split('/').length - 1]
 
     mkdirp(`${path}`, err => {

@@ -52,8 +52,7 @@
     "commands": "./lib/commands",
     "bin": "paws-cli",
     "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-update"
+      "@oclif/plugin-help"
     ],
     "macos": {
       "identifier": "com.trustedhousesitters.cli"
@@ -62,7 +61,7 @@
   "repository": "ChristienGuy/paws-cli",
   "scripts": {
     "pack": "oclif-dev pack",
-    "pack:macos": "oclif-dev pack:macos",
+    "pack:macos": "tsc && oclif-dev pack:macos",
     "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
     "posttest": "tslint -p . -t stylish",
     "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",

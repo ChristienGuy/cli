@@ -9,7 +9,5 @@
     "target": "es2017",
     "composite": true
   },
-  "include": [
-    "src/**/*", "test/commands/create-component.test.ts", "test/create-component.test.ts"
-  ]
+  "include": ["src/**/*"]
 }

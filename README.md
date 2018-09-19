@@ -28,7 +28,6 @@ USAGE
 <!-- commands -->
 * [`paws-cli create-component [PATH]`](#paws-cli-create-component-path)
 * [`paws-cli help [COMMAND]`](#paws-cli-help-command)
-* [`paws-cli update [CHANNEL]`](#paws-cli-update-channel)
 
 ## `paws-cli create-component [PATH]`
 
@@ -64,15 +63,4 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.2/src/commands/help.ts)_
-
-## `paws-cli update [CHANNEL]`
-
-update the paws-cli CLI
-
-```
-USAGE
-  $ paws-cli update [CHANNEL]
-```
-
-_See code: [@oclif/plugin-update](https://github.com/oclif/plugin-update/blob/v1.3.2/src/commands/update.ts)_
 <!-- commandsstop -->
