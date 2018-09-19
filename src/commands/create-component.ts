@@ -17,7 +17,7 @@ export default class CreateComponent extends Command {
   static description = 'creates a new react class component at the given path'
 
   static flags = {
-    help: flags.help({char: 'h'}),
+    help: flags.help({char: 'h'})
   }
 
   // parse arguments from their positions into named arguments
@@ -33,7 +33,8 @@ export default class CreateComponent extends Command {
       this.error('Please provide a path')
       return
     }
-    const name = path.split('/')[path.split('/').length - 1]
+    const pathArr = path.split('/')
+    const name = pathArr[pathArr.length - 1]
 
     mkdirp(`${path}`, err => {
       if (err) {
