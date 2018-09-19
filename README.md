@@ -17,7 +17,7 @@ $ npm install -g paws-cli
 $ paws-cli COMMAND
 running command...
 $ paws-cli (-v|--version|version)
-paws-cli/0.0.1 darwin-x64 node-v8.11.4
+paws-cli/0.0.2 darwin-x64 node-v8.11.4
 $ paws-cli --help [COMMAND]
 USAGE
   $ paws-cli COMMAND
@@ -28,6 +28,7 @@ USAGE
 <!-- commands -->
 * [`paws-cli create-component [PATH]`](#paws-cli-create-component-path)
 * [`paws-cli help [COMMAND]`](#paws-cli-help-command)
+* [`paws-cli update [CHANNEL]`](#paws-cli-update-channel)
 
 ## `paws-cli create-component [PATH]`
 
@@ -45,7 +46,7 @@ ALIASES
   $ paws-cli cc
 ```
 
-_See code: [src/commands/create-component.ts](https://github.com/ChristienGuy/paws-cli/blob/v0.0.1/src/commands/create-component.ts)_
+_See code: [src/commands/create-component.ts](https://github.com/ChristienGuy/paws-cli/blob/v0.0.2/src/commands/create-component.ts)_
 
 ## `paws-cli help [COMMAND]`
 
@@ -63,4 +64,15 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.2/src/commands/help.ts)_
+
+## `paws-cli update [CHANNEL]`
+
+update the paws-cli CLI
+
+```
+USAGE
+  $ paws-cli update [CHANNEL]
+```
+
+_See code: [@oclif/plugin-update](https://github.com/oclif/plugin-update/blob/v1.3.2/src/commands/update.ts)_
 <!-- commandsstop -->

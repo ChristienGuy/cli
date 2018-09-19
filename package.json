@@ -1,6 +1,6 @@
 {
   "name": "paws-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Chris Guy @christien_guy",
   "bin": {
     "paws-cli": "./bin/run"
@@ -10,6 +10,7 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
+    "@oclif/plugin-update": "^1.3.2",
     "@types/mkdirp": "^0.5.2",
     "@types/mock-fs": "^3.6.30",
     "chalk": "^2.4.1",
@@ -51,7 +52,8 @@
     "commands": "./lib/commands",
     "bin": "paws-cli",
     "plugins": [
-      "@oclif/plugin-help"
+      "@oclif/plugin-help",
+      "@oclif/plugin-update"
     ],
     "macos": {
       "identifier": "com.trustedhousesitters.cli"
@@ -59,6 +61,8 @@
   },
   "repository": "ChristienGuy/paws-cli",
   "scripts": {
+    "pack": "oclif-dev pack",
+    "pack:macos": "oclif-dev pack:macos",
     "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
     "posttest": "tslint -p . -t stylish",
     "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
