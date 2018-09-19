@@ -12,6 +12,6 @@ describe('hello', () => {
     .stdout()
     .command(['create-component test/Navbar'])
     .it('runs create-component', ctx => {
-      existsSync('test/NavBar')
+      expect(existsSync('test/NavBar')).to.equal(true)
     })
 })

@@ -18,10 +18,6 @@ export default class CreateComponent extends Command {
 
   static flags = {
     help: flags.help({char: 'h'}),
-    // generate a stateless functional component
-    sfc: flags.boolean({
-      description: 'generate a Stateless Function Component'
-    })
   }
 
   // parse arguments from their positions into named arguments
