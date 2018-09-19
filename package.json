@@ -1,6 +1,6 @@
 {
   "name": "paws-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Chris Guy @christien_guy",
   "bin": {
     "paws-cli": "./bin/run"
@@ -19,7 +19,6 @@
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
     "@oclif/dev-cli": "^1",
-    "@oclif/test": "^1",
     "@oclif/tslint": "^3",
     "@types/jest": "^23.3.2",
     "@types/node": "^10.10.1",
