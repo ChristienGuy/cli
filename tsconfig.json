@@ -10,6 +10,6 @@
     "composite": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*", "test/commands/create-component.test.ts", "test/create-component.test.ts"
   ]
 }

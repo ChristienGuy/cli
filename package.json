@@ -11,12 +11,14 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
     "@types/mkdirp": "^0.5.2",
+    "@types/mock-fs": "^3.6.30",
     "chalk": "^2.4.1",
     "mkdirp": "^0.5.1",
     "tslib": "^1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
     "@oclif/tslint": "^3",
     "@types/chai": "^4",
     "@types/mocha": "^5",
@@ -24,6 +26,7 @@
     "chai": "^4",
     "globby": "^8",
     "mocha": "^5",
+    "mock-fs": "^4.7.0",
     "nyc": "^13",
     "ts-node": "^7",
     "tslint": "^5",
@@ -49,7 +52,10 @@
     "bin": "paws-cli",
     "plugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "macos": {
+      "identifier": "com.trustedhousesitters.cli"
+    }
   },
   "repository": "ChristienGuy/paws-cli",
   "scripts": {
