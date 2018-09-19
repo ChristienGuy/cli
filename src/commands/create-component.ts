@@ -7,6 +7,7 @@ import {
   indexJs,
   nameJs,
   nameMdxJs,
+  nameStyleJs,
   nameTestJs
 } from '../file-helpers/create-files-react'
 
@@ -55,6 +56,15 @@ export default class CreateComponent extends Command {
             this.log(err.message)
           } else {
             this.log(`${success} - ${path}/${name}.js`)
+          }
+        })
+
+        // Write Name.style.js file
+        writeFile(`${path}/${name}.style.js`, nameStyleJs(), err => {
+          if (err) {
+            this.log(err.message)
+          } else {
+            this.log(`${success} - ${path}/${name}.style.js`)
           }
         })
 

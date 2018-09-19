@@ -7,6 +7,7 @@ export {
 
 const nameJs = (name: string) => `// @flow
 import React, { Component } from 'react';
+import { WrapperStyled } from './${name}.style';
 
 type Props = {
 
@@ -16,9 +17,9 @@ class ${name} extends Component<Props> {
   state = {  }
   render() {
     return (
-      <div>
+      <WrapperStyled>
         ${name}
-      </div>
+      </WrapperStyled>
     );
   }
 }
@@ -28,6 +29,16 @@ ${name}.defaultProps = {
 }
 
 export default ${name};
+`
+
+const nameStyleJs = () => `import styled from 'styled-components';
+
+const WrapperStyled = styled.div\`
+  padding: 24px;
+  background-color: tomato;
+\`;
+
+export { WrapperStyled }
 `
 
 const nameTestJs = (name: string) => `/* eslint-env jest */
@@ -67,5 +78,6 @@ export {
   indexJs,
   nameJs,
   nameTestJs,
+  nameStyleJs,
   nameMdxJs
 }
